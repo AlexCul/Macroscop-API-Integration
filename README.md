@@ -4,4 +4,4 @@
 ## Installation
 For Linux systems recommended to clone repository to ~/Macroscop:
 
-`mkdir ~/Macroscop && cd Macroscop/ && git clone https://github.com/AlexCul/Macroscop-API-Integration.git`
+`mkdir ~/Macroscop && cd ~/Macroscop/ && git clone https://github.com/AlexCul/Macroscop-API-Integration.git`
