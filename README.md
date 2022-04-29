@@ -1,5 +1,5 @@
 # Macroscop-API-Integration
-![image](https://user-images.githubusercontent.com/34921494/165915398-e52f1d40-1ae6-48d5-b539-d925c11f60b5.png)
+![image](https://user-images.githubusercontent.com/34921494/165927287-2b3f7d83-a25f-4311-ae0c-69adbdb18cf7.png)
 
 ## Installation
 For Linux & OS X systems recommended to clone repository to ~/Macroscop:
