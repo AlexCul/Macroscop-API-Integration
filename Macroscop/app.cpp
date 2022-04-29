@@ -1,18 +1,12 @@
-#include <QFile>
 #include <QFileDialog>
-#include <QTextStream>
 
 #include <QUrl>
-#include <QDebug>
-#include <QEventLoop>
-#include <QByteArray>
 #include <QtNetwork/QNetworkReply>
-#include <QtNetwork/QNetworkRequest>
-#include <QtNetwork/QNetworkAccessManager>
 
 
 #include "app.h"
 #include "ui_app.h"
+#include "common_functions.h"
 
 
 App::App(QWidget *parent)
@@ -44,11 +38,11 @@ App::~App()
 
 void App::on_translate_btn_clicked()
 {
+    journal_writing(ui->jsonfilepath_lnedit->text());
     QFile file(ui->jsonfilepath_lnedit->text());
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
-            return;
-
-    ui->answerreader_txtbrowser->setText(file.readAll());
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+            ui->answerreader_txtbrowser->setText(file.readAll());
+    this->statusBar()->showMessage(ui->jsonfilepath_lnedit->text());
 }
 
 void App::on_jsonfilepath_btn_clicked()
@@ -59,6 +53,8 @@ void App::on_jsonfilepath_btn_clicked()
 
 void App::on_sendrequest_btn_clicked()
 {
+    journal_writing(ui->serverip_lnedit->text());
     request.setUrl(QUrl(ui->serverip_lnedit->text()));
     manager->get(request);
+    this->statusBar()->showMessage(ui->serverip_lnedit->text());
 }

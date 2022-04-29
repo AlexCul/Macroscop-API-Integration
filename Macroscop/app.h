@@ -6,11 +6,12 @@
 #include <QtNetwork/QNetworkRequest>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class App; }
+namespace Ui {
+    class App;
+}
 QT_END_NAMESPACE
 
-class App : public QMainWindow
-{
+class App : public QMainWindow {
     Q_OBJECT
 
 public:

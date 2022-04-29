@@ -20,7 +20,8 @@ SOURCES += \
     app.cpp
 
 HEADERS += \
-    app.h
+    app.h \
+    common_functions.h
 
 FORMS += \
     app.ui
