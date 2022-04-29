@@ -1,4 +1,4 @@
-# Macroscop-API-Integration
+# MIwAPI - Macroscop Integration with API
 ![image](https://user-images.githubusercontent.com/34921494/165927287-2b3f7d83-a25f-4311-ae0c-69adbdb18cf7.png)
 
 ## Installation
