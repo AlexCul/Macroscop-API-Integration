@@ -15,7 +15,7 @@
 
 
 #include "app.h"
-#include "ui_app.h"
+#include "ui_design.h"
 
 App::App(QWidget *parent) : QMainWindow(parent), ui(new Ui::App) {
     ui->setupUi(this);
