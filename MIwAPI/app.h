@@ -26,6 +26,8 @@ private slots:
 
     void on_sendrequest_btn_clicked();
 
+    void on_openfullinterface_btn_clicked();
+
 private:
     Ui::App *ui;
     QNetworkAccessManager *manager;

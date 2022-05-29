@@ -17,27 +17,6 @@
 #include "app.h"
 #include "ui_design.h"
 
-App::App(QWidget *parent) : QMainWindow(parent), ui(new Ui::App) {
-    ui->setupUi(this);
-
-    manager = new QNetworkAccessManager();
-        QObject::connect(manager, &QNetworkAccessManager::finished,
-            this, [=](QNetworkReply *reply) {
-                if (reply->error()) {
-                    qDebug() << reply->errorString();
-                    return;
-                }
-
-                QString answer = reply->readAll();
-
-                ui->answerreader_txtbrowser->setText(answer);
-            }
-    );
-}
-
-App::~App() {
-    delete ui;
-}
 
 class NotUiFunctions {
     public:
@@ -53,6 +32,5 @@ class NotUiFunctions {
         }
 };
 
-class UiFunctions : public App {};
 
 #endif // FUNCTIONS_H

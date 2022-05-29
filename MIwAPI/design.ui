@@ -15,6 +15,20 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="3">
+     <layout class="QHBoxLayout" name="server_hlayout">
+      <item>
+       <widget class="QPushButton" name="sendrequest_btn">
+        <property name="text">
+         <string>Send request to...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="serverip_lnedit"/>
+      </item>
+     </layout>
+    </item>
     <item row="1" column="3">
      <widget class="QTextBrowser" name="answerreader_txtbrowser"/>
     </item>
@@ -61,19 +75,12 @@
       </item>
      </layout>
     </item>
-    <item row="2" column="3">
-     <layout class="QHBoxLayout" name="server_hlayout">
-      <item>
-       <widget class="QPushButton" name="sendrequest_btn">
-        <property name="text">
-         <string>Send request to...</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="serverip_lnedit"/>
-      </item>
-     </layout>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="openfullinterface_btn">
+      <property name="text">
+       <string>Open full MIwAPI interface...</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
