@@ -5,3 +5,9 @@
 For Linux systems recommended to clone repository to ~/Macroscop:
 
 `mkdir ~/Macroscop && cd ~/Macroscop/ && git clone https://github.com/AlexCul/Macroscop-API-Integration.git`
+
+## Debian-based distributions(Debian itself, Ubuntu etc.)
+`cd Macroscop-API-Integration/MIwAPI && qt5-qmake Macroscop.pro && make`
+
+## RHEL-based distributions(Fedora, CentOS, openSUSE etc.)
+`cd Macroscop-API-Integration/MIwAPI && qmake-qt5 Macroscop.pro && make`
